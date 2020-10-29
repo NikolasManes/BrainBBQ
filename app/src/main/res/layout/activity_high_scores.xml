@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.papanoel.brainbbq.HighScores"
+    android:background="@drawable/game_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/top_scores"
+            style="@style/TittleStyle"
+            android:text="Top Scores"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:layout_weight="7"
+        android:id="@+id/highScoreList"
+        android:cacheColorHint="@color/material_grey_100"
+        android:divider="@android:color/transparent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/MainMenuButton"
+            style="@style/ButtonStyle"
+            android:layout_centerInParent="true"
+            android:text="Main Menu"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
